@@ -1,0 +1,83 @@
+body {
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #006699;
+    color: #FFFFCC;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #006699;
+}
+
+nav a:hover {
+    color: #004466;
+}
+
+.article {
+    margin-bottom: 30px;
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.right {
+    float: right;
+    width: 100%;
+    max-width: 300px; /* Ajusta el tamaño del aside según necesites */
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción para vídeos 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
